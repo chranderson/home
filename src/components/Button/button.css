@@ -1,0 +1,186 @@
+.button {
+  text-transform: uppercase;
+  background: seagreen;
+  color: white;
+  /*ellipsis*/
+  white-space: nowrap;
+  overflow: hidden;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+
+  /*@include flexBox(row, nowrap, center, center);*/
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+  letter-spacing: 0.04em;
+
+  border: 1px solid transparent;
+
+  transition: all 0.1s ease;
+  text-align: center;
+}
+
+.button:enabled {
+  cursor: pointer;
+  text-shadow: 0px 1px 0px rgba(0,0,0,0.3);
+}
+.button:enabled:hover {
+  /*cursor: pointer;*/
+  /*text-shadow: 0px 1px 0px rgba(0,0,0,0.3);*/
+  box-shadow: 0 6px 4px -5px rgba(0, 0, 0, 0.3);
+}
+
+.button:enabled:active {
+  /*border: 0;*/
+  /*border-width: 1px;*/
+  /*border-style: solid;*/
+  box-shadow: inset 0 0 3px 1px rgba(0,0,0,0.1);
+  text-shadow: none;
+}
+
+.button:enabled:active > .btnBody {
+  transform: translateY(0.5px);
+}
+
+.button:enabled:focus {
+  outline: 0;
+}
+
+.button:disabled, .tinyButton:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+    text-shadow: none;
+}
+
+.btnBody {
+  /*border: 1px solid white;*/
+  /*ellipsis*/
+  white-space: nowrap;
+  overflow: hidden;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+
+  /*@include flexBox(row, nowrap, center, center);*/
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+/*.primaryColor {
+  background: $btnColor;
+  background-color: $btnColor;
+  color: darken($btnColor, 20%);
+  border-color: darken($btnColor, 7%);
+  border-top-color: darken($btnColor, 5%);
+  > svg {
+    fill: darken($btnColor, 20%);
+  }
+
+  &.groupBtn {
+    border-left-color: $btnColor;
+    &:first-of-type {
+      border-left-color: darken($btnColor, 10%);
+    }
+  }
+
+  &:enabled {
+    color: $white;
+    border-bottom-color: darken($btnColor, 15%);
+    > svg {
+      fill: $white;
+    }
+  }
+
+  &:enabled:hover {
+    background: lighten($btnColor, 5%);
+  }
+  &:enabled:active {
+    background: darken($btnColor, 15%);
+    border-color: darken($btnColor, 20%);
+  }
+}*/
+
+.defaultBtn {
+  font-size: 0.9em;
+  font-weight: 400;
+  padding: 7px 1em 5px;
+}
+.defaultBtn:active {
+  /*padding: 7px 1em 5px;*/
+}
+
+/*// button sizes
+
+
+.singleBtn {
+  &:enabled {
+    @include bottomEdgeShadow;
+  }
+}
+
+.groupBtn {
+  // margin-right: -1px;
+  &:enabled {
+    @include fullBottomEdgeShadow;
+  }
+}
+
+.small {
+  font-size: 0.7em;
+  padding: 2px 0.7em;
+}
+
+// button themes
+.danger {
+  @include btnColor($red);
+}
+
+.execute {
+  @include btnColor($green);
+}
+
+.link {
+  $enabledLinkColor: lighten($linkColor, 5%);
+  // opacity: 0.8;
+  font-family: 'fira-sans', sans-serif;
+  @include flexBox(row, nowrap, center, center);
+  text-transform: uppercase;
+  border: none;
+  background: transparent;
+  outline: none;
+  color: $enabledLinkColor;
+  transition: color 0.1s ease;
+  padding: 0;
+  > svg {
+    fill: $enabledLinkColor;
+  }
+  &:hover {
+    $hoverLinkColor: darken($linkColor, 5%);
+    color: $hoverLinkColor;
+    > svg {
+      fill: $hoverLinkColor;
+    }
+  }
+  &:active {
+    $activeColor: darken($linkColor, 20%);
+    color: $activeColor;
+    > svg {
+      fill: $activeColor;
+    }
+  }
+
+}
+.primary {
+  @include btnColor($blue);
+}
+.secondary {
+  @include btnColor($red);
+}*/

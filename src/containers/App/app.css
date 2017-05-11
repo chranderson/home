@@ -1,0 +1,6 @@
+.App {
+  text-align: center;
+  padding: 44px 0;
+  height: calc(100vh - 88px);
+  background: #e9ebee;
+}

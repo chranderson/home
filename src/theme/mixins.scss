@@ -1,0 +1,15 @@
+@mixin bottomEdgeShadow {
+  -webkit-box-shadow: 0 6px 4px -5px rgba(0, 0, 0, 0.3);
+     -moz-box-shadow: 0 6px 4px -5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 6px 4px -5px rgba(0, 0, 0, 0.3);
+}
+
+@mixin fullBottomEdgeShadow {
+  -webkit-box-shadow: 0 3px 6px -2px rgba(0, 0, 0, 0.2);
+     -moz-box-shadow: 0 3px 6px -2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 3px 6px -2px rgba(0, 0, 0, 0.2);
+}
+
+@mixin textShadow {
+  text-shadow: 0px 1px 1px rgba(0,0,0,0.3);
+}
